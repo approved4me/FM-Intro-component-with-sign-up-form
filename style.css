@@ -55,7 +55,7 @@ body {
   background-position: center;
   background-color: var(--primary-red);
   color: #fff;
-  text-align: center;
+  
 }
 
 main {
@@ -66,6 +66,7 @@ main {
 
 article h1, article p {
   margin-block: 1rem;
+  text-align: center;
 }
 
 .cta {
@@ -77,7 +78,6 @@ article h1, article p {
   margin-block: 1.5rem;
   margin-top: 4rem;
   box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.1);
-
 }
 
 .cta span {
@@ -139,4 +139,52 @@ article h1, article p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px)  {
+
+  body {
+    background-image: url(./images/bg-intro-desktop.png);
+    background-repeat: repeat-x;
+    background-position: right;
+  }
+
+    main {
+      margin: 4rem;
+      padding: 1rem;;
+    }
+
+  article {
+    display: flex; 
+    align-items: center;
+  }
+  article > * {
+    flex: 1;
+  }
+
+  article h1 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+    margin-block-end: 2rem;;
+  }
+  article h1, article p {
+       text-align: left;
+  }
+
+  .form {
+    padding: 2rem;
+  }
+
+  .even-column {
+    padding: 2rem;
+  }
+
+  .cta {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .terms {
+    text-align: center;
+  }
 }
