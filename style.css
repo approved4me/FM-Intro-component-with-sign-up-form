@@ -119,6 +119,12 @@ article h1, article p {
   margin-block: 1rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
+  transition: 0.3s linear;
+}
+
+.submit:hover {
+  cursor: pointer;
+  background-color: hsl(154, 59%, 65%);
 }
 
 .terms {
@@ -130,6 +136,27 @@ article h1, article p {
   text-decoration: none;
   color: var(--primary-red);
   font-weight: 700;
+}
+
+.error-txt {
+  color: var(--primary-red);
+  margin-top: 0;
+  font-style: italic;
+  font-size: 0.8rem;
+  text-align: right;
+  font-weight: 500;
+}
+
+.hide {
+  display: none;
+}
+
+input.error {
+  background-image: url(./images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 95%;
+  outline: 2px solid var(--primary-red);
+  color: var(--primary-red);
 }
 
 .attribution {

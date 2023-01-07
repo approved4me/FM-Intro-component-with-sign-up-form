@@ -31,10 +31,14 @@
         <div class="cta"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
 
         <form class="form" id="form" action="">
-          <input class="input" type="text" name="first-name" placeholder="First Name">
-          <input class="input" type="text" name="last-name" placeholder="Last Name">
-          <input class="input" type="text" name="email-name" placeholder="Email Address">
-          <input class="input" type="password" name="password" placeholder="Password">
+          <input class="input " type="text" id="first-name" name="first-name" placeholder="First Name">
+          <p class="error-txt hide">First Name cannot be empty</p>
+          <input class="input " type="text" id="last-name" name="last-name" placeholder="Last Name">
+          <p class="error-txt hide">Last Name cannot be empty</p>
+          <input class="input" type="text" id="email" name="email-name" placeholder="Email Address">
+          <p class="error-txt hide">Looks like this is not an email</p>
+          <input class="input " type="password" id="password" name="password" placeholder="Password">
+          <p class="error-txt hide">Password cannot be empty</p>
           <button class="submit" type="submit" aria-label="Submit">Claim your free trial</button>
           <div class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></div>
         </form>
